@@ -1,0 +1,28 @@
+package kashemjava;
+
+import java.util.Scanner;
+
+public class KashemJava{
+public static void main(String[] args){
+        Scanner kashem = new Scanner(System.in);
+        System.out.println("Enter your electric unit: ");
+        int unit = kashem.nextInt();
+        
+        if (unit >= 500){
+            System.out.println("Electric Bill: " + unit * 25 + " taka");
+        }
+        else if (unit >= 201){
+            System.out.println("Electric Bill: " + unit * 20 + " taka");
+        }
+        else if (unit >= 101){
+            System.out.println("Electric Bill: " + unit * 15 + " taka");
+        }
+        else if(unit > 0 ){
+            System.out.println("Electric Bill: " + unit * 20 + " taka");
+        }
+        else{
+            System.out.println("Invalid Electric Unit");
+        }
+    }
+}
+
