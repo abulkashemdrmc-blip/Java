@@ -1,0 +1,21 @@
+package kashemjava;
+
+import java.util.Scanner;
+
+public class KashemJava{
+    public static void main(String[] args) {
+        Scanner kashem = new Scanner(System.in);
+        System.out.println("Enter your purchase amount: ");
+        int amount = kashem.nextInt();
+        
+        if (amount >= 5000){
+            System.out.println("10% discount is applicable");
+            }
+        else if (amount >= 3000 ){
+            System.out.println("5% discount is applicable");
+            }
+        else{
+            System.out.println("No discount is applicable");
+        }
+    }
+}
