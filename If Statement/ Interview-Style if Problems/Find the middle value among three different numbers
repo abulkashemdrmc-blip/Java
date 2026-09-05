@@ -1,0 +1,18 @@
+package kashemjava;
+
+import java.util.Scanner;
+
+public class KashemJava{
+public static void main(String[] args){
+        Scanner kashem = new Scanner(System.in);
+        System.out.println("Enter the value of 1st number: ");
+        int number1 = kashem.nextInt();
+        System.out.println("Enter the value of 2nd number: ");
+        int number2 = kashem.nextInt();
+        System.out.println("Enter the value of 3rd number: ");
+        int number3 = kashem.nextInt();
+        
+        float x = (number1 + number2 + number3) / 3;
+        System.out.println("The middle number among " + number1 + ", " + number2 + " and " + number3 + " is " + x );
+    }
+}
