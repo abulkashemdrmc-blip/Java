@@ -1,0 +1,23 @@
+package kashemjava;
+
+import java.util.Scanner;
+
+public class KashemJava{
+public static void main(String[] args){
+        Scanner kashem = new Scanner(System.in);
+        System.out.println("Enter your number: ");
+        int number = kashem.nextInt();
+        
+        if (number >= 10){
+            if (number <=50){
+                System.out.println("The number is within the required range");
+            }
+            else{
+                System.out.println("The number is not within the required range");
+            }
+        }
+        else{
+            System.out.println("The number is not within the required range");
+        }
+    }
+}
