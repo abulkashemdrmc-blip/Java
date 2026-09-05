@@ -1,0 +1,19 @@
+package kashemjava;
+
+import java.util.Scanner;
+
+public class KashemJava{
+    public static void main(String[] args) {
+        Scanner kashem = new Scanner(System.in);
+        System.out.println("Enter your number: ");
+        double number = kashem.nextDouble();
+        
+        if (number >= 0){
+            System.out.println("Absolute value is " + number);
+        }
+        else{
+            double x = -1 * number;
+            System.out.println("Absolute value is " + x);
+        }
+    }
+}
