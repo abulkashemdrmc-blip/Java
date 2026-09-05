@@ -1,0 +1,18 @@
+package kashemjava;
+
+import java.util.Scanner;
+
+public class KashemJava{
+    public static void main(String[] args) {
+        Scanner kashem = new Scanner(System.in);
+        System.out.println("Enter your age: ");
+        int number = kashem.nextInt();
+        
+        if (number >= 18){
+            System.out.println("Eligible as a voter");
+        }
+        else{
+            System.out.println("Not eligible as a voter");
+        }
+    }
+}
