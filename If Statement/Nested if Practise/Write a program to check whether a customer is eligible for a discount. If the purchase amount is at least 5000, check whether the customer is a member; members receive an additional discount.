@@ -1,0 +1,25 @@
+package kashemjava;
+
+import java.util.Scanner;
+
+public class KashemJava{
+    public static void main(String[] args) {
+        Scanner kashem = new Scanner(System.in);
+        System.out.println("Enter your purchase amount: ");
+        int purchase = kashem.nextInt();
+        System.out.println("Enter your membership");
+        String member = kashem.nextLine();
+        
+        if (purchase >= 5000){
+            if (member == True){
+                System.out.println("You will receive an addition discount besides regular discount");
+            }
+            else{
+                System.out.println("You will receive regular discount only");
+            }
+        }
+        else{
+            System.out.println("You are not eligible to receive any discount");
+        }
+    }
+}
