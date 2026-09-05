@@ -1,1 +1,32 @@
+package kashemjava;
 
+import java.util.Scanner;
+
+public class KashemJava{
+public static void main(String[] args){
+        Scanner kashem = new Scanner(System.in);
+        System.out.println("Enter your marks in CSE110: ");
+        int marks1 = kashem.nextInt();
+        System.out.println("Enter your marks in Math110: ");
+        int marks2 = kashem.nextInt();
+        System.out.println("Enter your marks in ENG101: ");
+        int marks3 = kashem.nextInt();
+        
+        if (marks1 >= 40){
+            if (marks2 >= 40){
+                if (marks3 >= 40){
+                    System.out.println("Passed");
+                }
+                else{
+                    System.out.println("Failed");
+                }
+            }
+            else{
+                System.out.println("Failed");
+            }
+        }
+        else{
+            System.out.println("Failed");
+        }
+    }
+}
