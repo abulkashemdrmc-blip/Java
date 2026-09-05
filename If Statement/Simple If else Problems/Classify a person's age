@@ -1,0 +1,27 @@
+package kashemjava;
+
+import java.util.Scanner;
+
+public class KashemJava{
+    public static void main(String[] args) {
+        Scanner kashem = new Scanner(System.in);
+        System.out.println("Enter your age: ");
+        int age = kashem.nextInt();
+        
+        if (age >= 60){
+            System.out.println("Senior");
+            }
+        else if (age >= 20){
+            System.out.println("Adult");
+            }
+        else if (age >= 13){
+            System.out.println("Teenager");
+        }
+        else if (age >= 0){
+            System.out.println("Child");
+        }
+        else{
+            System.out.println("Invalid Age");
+        }
+    }
+}
