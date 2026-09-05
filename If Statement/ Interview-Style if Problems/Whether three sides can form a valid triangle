@@ -1,0 +1,32 @@
+package kashemjava;
+
+import java.util.Scanner;
+
+public class KashemJava{
+    public static void main(String[] args) {
+        Scanner kashem = new Scanner(System.in);
+        System.out.println("Enter the 1st length of triangle: ");
+        float a = kashem.nextFloat();
+        System.out.println("Enter the 2nd length of triangle");
+        float b = kashem.nextFloat();
+        System.out.println("Enter the 3rd length of triangle");
+        float c = kashem.nextFloat();
+        
+        if (a + b > c){
+            if (b + c > a){
+                if (c + a > b){
+                    System.out.println("Three sides can form a triangle");
+                }
+                else{
+                    System.out.println("A triangle cannot be formed");
+                }
+            }
+            else{
+                System.out.println("A triangle cannot be formed");
+            }
+        }
+        else{
+            System.out.println("A triangle cannot be formed");
+        }
+    }
+}
