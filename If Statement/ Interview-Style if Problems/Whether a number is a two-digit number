@@ -1,0 +1,23 @@
+package kashemjava;
+
+import java.util.Scanner;
+
+public class KashemJava{
+public static void main(String[] args){
+        Scanner kashem = new Scanner(System.in);
+        System.out.println("Enter your two digit number: ");
+        int x = kashem.nextInt();
+   
+        if (x >= 10){
+            if (x < 100){
+                System.out.println("It is a two digit number");
+            }
+            else{
+                System.out.println("It is not a two digit number");
+            }
+          }
+        else{
+            System.out.println("It is not a two digit number");
+        }
+    }
+}
