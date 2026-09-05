@@ -1,0 +1,33 @@
+package kashemjava;
+
+import java.util.Scanner;
+
+public class KashemJava{
+public static void main(String[] args){
+        Scanner kashem = new Scanner(System.in);
+        System.out.println("Enter your alphabet: ");
+        String x = kashem.nextLine();
+        
+        String firstChar = x.substring(0,1);
+        
+        if (firstChar.equalsIgnoreCase("A")){
+            System.out.println("Vowel");
+        }
+        else if (firstChar.equalsIgnoreCase("E")){
+            System.out.println("Vowel");
+        }
+        else if (firstChar.equalsIgnoreCase("I")){
+            System.out.println("Vowel");
+        }
+        else if (firstChar.equalsIgnoreCase("O")){
+            System.out.println("Vowel");
+        }
+        else if (firstChar.equalsIgnoreCase("U")){
+            System.out.println("Vowel");
+        }
+        else{
+            System.out.println("Consonant");
+        }
+    }
+}
+
