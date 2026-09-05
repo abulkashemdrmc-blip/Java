@@ -1,0 +1,18 @@
+package kashemjava;
+
+import java.util.Scanner;
+
+public class KashemJava{
+    public static void main(String[] args) {
+        Scanner kashem = new Scanner(System.in);
+        System.out.println("Enter today's temperature: ");
+        float number = kashem.nextFloat();
+        
+        if (number > 30.0){
+            System.out.println("The temperature is above 30 degree Celsius");
+        }
+        else{
+            System.out.println("The temperature is below 30 degree Celsius");
+        }
+    }
+}
