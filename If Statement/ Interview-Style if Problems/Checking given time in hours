@@ -1,0 +1,33 @@
+package kashemjava;
+
+import java.util.Scanner;
+
+public class KashemJava{
+public static void main(String[] args){
+        Scanner kashem = new Scanner(System.in);
+        System.out.println("Enter time in hour: ");
+        int x = kashem.nextInt();
+        
+        if (x > 24){
+            System.out.println("Invalid Time");
+        }
+        else if (x >= 21){
+            System.out.println("Night");
+        }
+        else if (x >= 17){
+            System.out.println("Evening");
+        }
+        else if (x >= 12){
+            System.out.println("Afternoon");
+        }
+        else if (x >= 5){
+            System.out.println("Morning");
+        }
+        else if (x >= 0){
+            System.out.println("Night");
+        }
+        else{
+            System.out.println("Invalid Time");
+        }
+    }
+}
