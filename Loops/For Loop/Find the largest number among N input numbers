@@ -1,0 +1,31 @@
+package Loops;
+
+import java.util.Scanner;
+
+public class Loops{
+    public static void main(String[] args) {
+        Scanner kashem = new Scanner(System.in);
+        System.out.println("How many numbers do you want to check? ");
+        int x = kashem.nextInt();
+        
+        long max = -999999999;
+        int counter = 0;
+        
+        for(int i = 1; i <= x; i++){
+            
+            System.out.println("Enter your number which you want to check");
+            int y = kashem.nextInt();
+            
+            if(y > max){
+                max = y;
+            }
+                counter++;
+        }
+        if(counter > 1){
+            System.out.println("The largest number is " + max);
+        }
+        else{
+            System.out.println("You have not entered enough numbers");
+        }
+    }
+}
