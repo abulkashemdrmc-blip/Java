@@ -1,0 +1,27 @@
+package Loops;
+
+import java.util.Scanner;
+
+public class Loops {
+    public static void main(String[] args) {
+        Scanner kashem = new Scanner(System.in);
+        System.out.println("Which number do you want to check? ");
+        int x = kashem.nextInt();
+        
+        int counter = 0;
+        
+        for(int i = 1; i <= x; i++){
+            int y = x / i;
+            
+            if(x % i == 0){
+                counter++;
+            }
+        }
+        if(counter == 2){
+            System.out.println("The number is prime");
+        }
+        else{
+            System.out.println("The number is not prime");
+        }
+    }
+}
