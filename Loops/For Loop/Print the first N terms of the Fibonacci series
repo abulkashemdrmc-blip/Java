@@ -1,0 +1,22 @@
+package Loops;
+
+import java.util.Scanner;
+
+public class Loops {
+    public static void main(String[] args) {
+        Scanner kashem = new Scanner(System.in);
+        System.out.println("How many terms of Fibonacci series do you need? ");
+        int x = kashem.nextInt();
+        
+        int F1 = 1;
+        int F2 = 1;
+        int sum = 0;
+        
+        for(int i = 1; i <= x; i++){
+            sum = F1 + F2;
+            System.out.println(sum);
+            F1 = F2;
+            F2 = sum;
+        }
+    }
+}
