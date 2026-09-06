@@ -1,0 +1,21 @@
+package Loops;
+
+import java.util.Scanner;
+
+public class Loops{
+    public static void main(String[] args) {
+        
+        Scanner kashem = new Scanner(System.in);
+        System.out.println("Enter your desired number: ");
+        int N = kashem.nextInt();
+        
+        int i = N;
+        int factorial = 1;
+        
+        while(i>=1){
+            factorial = factorial * i;
+                    i = i - 1;
+        }
+        System.out.println("Factorial: " + factorial);
+        }
+    }
