@@ -1,0 +1,21 @@
+package Loops;
+
+import java.util.Scanner;
+
+public class Loops{
+    public static void main(String[] args) {
+        
+        Scanner kashem = new Scanner(System.in);
+        System.out.println("Enter the value of N: ");
+        int N = kashem.nextInt();
+        
+        int i = 1;
+        int sum = 0;
+        
+        while(i<=N){
+            sum += i;
+            i++;
+        }
+        System.out.println(sum);
+        }
+    }
