@@ -1,0 +1,16 @@
+package NewArray;
+
+public class NewArray {
+    public static void main(String[] args) {
+        int[] numbers = {55, 65, 75, 85, 95};
+        int total = 0;
+        int average = 0;
+        
+        for(int item: numbers){
+            total += item;
+            average = total/5;
+        }
+        
+        System.out.println("The average mark is " + average);
+    }
+}
