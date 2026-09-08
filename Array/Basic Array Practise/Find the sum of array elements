@@ -1,0 +1,21 @@
+package NewArray;
+
+import java.util.Scanner;
+
+public class NewArray {
+    public static void main(String[] args) {
+        int[] numbers = new int[10];
+    int total = 0;
+    Scanner input = new Scanner(System.in);
+    
+    
+        for(int i = 0; i < numbers.length; i++){
+            System.out.print("Enter your array's element: ");
+            int number = input.nextInt();
+            numbers[i] = number;
+            total += number;
+        }
+        
+        System.out.println(total);
+    }
+}
