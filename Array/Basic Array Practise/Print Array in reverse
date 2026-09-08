@@ -1,0 +1,16 @@
+package NewArray;
+
+import java.util.Arrays;
+
+public class NewArray {
+    public static void main(String[] args) {
+        int[] numbers = {55, 65, 55, 85, 95};
+        int[] result = new int[numbers.length];
+        
+        for(int i = 0, j = numbers.length - 1 - i; i < numbers.length; i++, j--){
+            result[j] = numbers[i];
+        }
+        
+        System.out.println(Arrays.toString(result));
+    }
+}
