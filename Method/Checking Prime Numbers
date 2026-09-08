@@ -1,0 +1,24 @@
+package method;
+
+public class Method {
+
+   public static void main(String[] args) {
+        System.out.println(checkPrime(5));
+        System.out.println(checkPrime(9));
+    }
+   public static String checkPrime(int x){
+       int counter = 0;
+       for(int i = 1; i <= x; i++){
+           if(x % i == 0){
+               counter++;
+           }
+       }
+       if(counter == 2){
+           return x + " is prime number";
+       }
+       else{
+           return x + " is not prime number";
+       }
+   }
+    
+}
