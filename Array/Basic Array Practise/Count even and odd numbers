@@ -1,0 +1,21 @@
+package NewArray;
+
+public class NewArray {
+    public static void main(String[] args) {
+        int[] numbers = {55, 65, 75, 85, 95};
+        int odd = 0;
+        int even = 0;
+        
+        for(int item: numbers){
+            if(item % 2 == 0){
+                even++;
+            }
+            else{
+                odd++;
+            }
+        }
+        
+        System.out.println("Total number of odd numbers are " + odd);
+        System.out.println("Total number of even numbers are " + even);
+    }
+}
