@@ -1,0 +1,15 @@
+package NewArray;
+
+public class NewArray {
+    public static void main(String[] args) {
+        int[] numbers = {55, 65, 55, 85, 95};
+        int counter = 0;
+        
+        for(int item: numbers){
+            if (item == 55){
+                counter++;
+            }
+        }
+        System.out.println("55 has appeared " + counter + " times");
+    }
+}
