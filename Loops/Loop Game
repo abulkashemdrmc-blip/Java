@@ -1,0 +1,25 @@
+package LoopGame;
+
+import java.util.Scanner;
+
+public class LoopGame {
+    public static void main(String[] args) {
+        Scanner kashem = new Scanner(System.in);
+        
+        
+       int y = (int)(Math.random()*10);
+       
+       for(int i = 1; i<=3; i++){
+           System.out.println("Enter your desired number (1 to 9): ");
+        int x = kashem.nextInt();
+           if(x == y){
+               System.out.println("You have got it");
+               break;
+           }
+           if(i == 3){
+               System.out.println("The Game is over.");
+               System.out.println("The guess number is " + y);
+           }
+       }
+    }
+}
