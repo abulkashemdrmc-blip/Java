@@ -1,1 +1,174 @@
+package Football;
 
+public class FootballClub {
+    
+    private String name;
+    private String president;
+    private String manager;
+    private String striker;
+    private String leftWinger;
+    private String rightWinger;
+    private String attackingMidfielder;
+    private String centralMidfielder;
+    private String defendingMidfielder;
+    private String centralback1;
+    private String centralback2;
+    private String leftback;
+    private String rightback;
+    private String goalkeeper;
+
+    public FootballClub() {
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getPresident() {
+        return president;
+    }
+
+    public void setPresident(String president) {
+        this.president = president;
+    }
+
+    public String getManager() {
+        return manager;
+    }
+
+    public void setManager(String manager) {
+        this.manager = manager;
+    }
+
+    public String getStriker() {
+        return striker;
+    }
+
+    public void setStriker(String striker) {
+        this.striker = striker;
+    }
+
+    public String getLeftWinger() {
+        return leftWinger;
+    }
+
+    public void setLeftWinger(String leftWinger) {
+        this.leftWinger = leftWinger;
+    }
+
+    public String getRightWinger() {
+        return rightWinger;
+    }
+
+    public void setRightWinger(String rightWinger) {
+        this.rightWinger = rightWinger;
+    }
+
+    public String getAttackingMidfielder() {
+        return attackingMidfielder;
+    }
+
+    public void setAttackingMidfielder(String attackingMidfielder) {
+        this.attackingMidfielder = attackingMidfielder;
+    }
+
+    public String getCentralMidfielder() {
+        return centralMidfielder;
+    }
+
+    public void setCentralMidfielder(String centralMidfielder) {
+        this.centralMidfielder = centralMidfielder;
+    }
+
+    public String getDefendingMidfielder() {
+        return defendingMidfielder;
+    }
+
+    public void setDefendingMidfielder(String defendingMidfielder) {
+        this.defendingMidfielder = defendingMidfielder;
+    }
+
+    public String getCentralback1() {
+        return centralback1;
+    }
+
+    public void setCentralback1(String centralback1) {
+        this.centralback1 = centralback1;
+    }
+
+    public String getCentralback2() {
+        return centralback2;
+    }
+
+    public void setCentralback2(String centralback2) {
+        this.centralback2 = centralback2;
+    }
+
+    public String getLeftback() {
+        return leftback;
+    }
+
+    public void setLeftback(String leftback) {
+        this.leftback = leftback;
+    }
+
+    public String getRightback() {
+        return rightback;
+    }
+
+    public void setRightback(String rightback) {
+        this.rightback = rightback;
+    }
+
+    public String getGoalkeeper() {
+        return goalkeeper;
+    }
+
+    public void setGoalkeeper(String goalkeeper) {
+        this.goalkeeper = goalkeeper;
+    }
+    
+    public void printDetails(){
+        System.out.println("Football Club Name: " + name);
+        System.out.println("Club President Name: " + president);
+        System.out.println("Club Manager Name: " + manager);
+        System.out.println("Striker: " + striker);
+        System.out.println("Left Winger: " + leftWinger);
+        System.out.println("Right Winger: " + rightWinger);
+        System.out.println("Central Midfielder: " + centralMidfielder);
+        System.out.println("Attacking Midfielder: " + attackingMidfielder);
+        System.out.println("Defending Midfielder: " + defendingMidfielder);
+        System.out.println("Central Back: " + centralback1);
+        System.out.println("Central Back: " + centralback2);
+        System.out.println("Left Back: " + leftback);
+        System.out.println("Right Back: " + rightback);
+        System.out.println("Goalkeeper: " + goalkeeper);
+    }
+
+    public static void main(String[] args) {
+        
+        FootballClub club = new FootballClub();
+        
+        club.setName("Bengal Tigers Club");
+        club.setPresident("Abul Kashem");
+        club.setManager("Zinedane Zidane");
+        club.setStriker("Cristiano Ronaldo");
+        club.setLeftWinger("Lamine Yamal");
+        club.setRightWinger("Lionel Messi");
+        club.setCentralMidfielder("Ronaldinho");
+        club.setAttackingMidfielder("Jude Bellingham");
+        club.setDefendingMidfielder("Rodri");
+        club.setCentralback1("Sergio Ramos");
+        club.setCentralback2("Virgil Van Dijk");
+        club.setRightback("Achraf Hakimi");
+        club.setLeftback("Nuno Mendes");
+        club.setGoalkeeper("Iker Casillas");
+        
+        club.printDetails();
+ 
+    }
+}
