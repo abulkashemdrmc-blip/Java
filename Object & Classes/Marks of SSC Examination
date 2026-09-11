@@ -1,1 +1,190 @@
+package SSCMarks;
 
+public class Marks {
+    
+    private int bangla;
+    private int english;
+    private int generalMath;
+    private int higherMath;
+    private int physics;
+    private int chemistry;
+    private int biology;
+    private int bgs;
+    private int religion;
+    private int ict;
+    private int careereducation;
+    private int physicaleducation;
+    private int totalMarks;
+    private String scholarship;
+
+    public Marks() {
+    }
+
+    public int getBangla() {
+        return bangla;
+    }
+
+    public void setBangla(int bangla) {
+        this.bangla = bangla;
+    }
+
+    public int getEnglish() {
+        return english;
+    }
+
+    public void setEnglish(int english) {
+        this.english = english;
+    }
+
+    public int getGeneralMath() {
+        return generalMath;
+    }
+
+    public void setGeneralMath(int generalMath) {
+        this.generalMath = generalMath;
+    }
+
+    public int getHigherMath() {
+        return higherMath;
+    }
+
+    public void setHigherMath(int higherMath) {
+        this.higherMath = higherMath;
+    }
+
+    public int getPhysics() {
+        return physics;
+    }
+
+    public void setPhysics(int physics) {
+        this.physics = physics;
+    }
+
+    public int getChemistry() {
+        return chemistry;
+    }
+
+    public void setChemistry(int chemistry) {
+        this.chemistry = chemistry;
+    }
+
+    public int getBiology() {
+        return biology;
+    }
+
+    public void setBiology(int biology) {
+        this.biology = biology;
+    }
+
+    public int getBgs() {
+        return bgs;
+    }
+
+    public void setBgs(int bgs) {
+        this.bgs = bgs;
+    }
+
+    public int getReligion() {
+        return religion;
+    }
+
+    public void setReligion(int religion) {
+        this.religion = religion;
+    }
+
+    public int getIct() {
+        return ict;
+    }
+
+    public void setIct(int ict) {
+        this.ict = ict;
+    }
+
+    public int getCareereducation() {
+        return careereducation;
+    }
+
+    public void setCareereducation(int careereducation) {
+        this.careereducation = careereducation;
+    }
+
+    public int getPhysicaleducation() {
+        return physicaleducation;
+    }
+
+    public void setPhysicaleducation(int physicaleducation) {
+        this.physicaleducation = physicaleducation;
+    }
+
+    public int getTotalMarks() {
+        return totalMarks;
+    }
+
+    public void setTotalMarks(int totalMarks) {
+        
+        if(totalMarks == bangla + english + generalMath + higherMath + physics + chemistry + biology
+                + bgs + religion + ict + physicaleducation + careereducation){
+            
+            this.totalMarks = totalMarks;
+        }
+        else{
+            this.totalMarks = bangla + english + generalMath + higherMath + physics + chemistry + biology
+                + bgs + religion + ict + physicaleducation + careereducation;
+        }
+    }
+
+    public String getScholarship() {
+        return scholarship;
+    }
+
+    public void setScholarship() {
+        
+        if(this.totalMarks > 1215){
+            this.scholarship = "Granted";
+        }
+        else{
+            this.scholarship = "Not Elligible";
+        }
+    }
+    
+    public void printDetails(){
+        System.out.println("Your SSC Examination marks are given below: ");
+        System.out.println("Bangla: " + bangla);
+        System.out.println("English " + english);
+        System.out.println("General Mathematics: " + generalMath);
+        System.out.println("Higher Mathematics: " + higherMath);
+        System.out.println("Physics: " + physics);
+        System.out.println("Chemistry: " + chemistry);
+        System.out.println("Biology: " + biology);
+        System.out.println("Bangladesh & Global Studies: " + bgs);
+        System.out.println("Islam & Moral Education: " + religion);
+        System.out.println("Information & Communication Technology: " + ict);
+        System.out.println("Physical Education Health Science & Sports: " + physicaleducation);
+        System.out.println("Career Education: " + careereducation);
+        System.out.println("Total marks: " + totalMarks);
+        System.out.println("Scholarship Status: " + scholarship);
+    }
+
+ public static void main(String[] args) {
+        
+        Marks marks = new Marks();
+        
+        marks.setBangla(175);
+        marks.setEnglish(177);
+        marks.setGeneralMath(95);
+        marks.setHigherMath(99);
+        marks.setPhysics(100);
+        marks.setChemistry(93);
+        marks.setBiology(92);
+        marks.setBgs(96);
+        marks.setReligion(94);
+        marks.setIct(50);
+        marks.setCareereducation(100);
+        marks.setPhysicaleducation(50);
+        marks.setTotalMarks(1221);
+        marks.setScholarship();
+        
+        marks.printDetails();
+        
+    }
+}
