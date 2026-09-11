@@ -1,0 +1,59 @@
+package Taxonomy;
+
+public class Hierarchy {
+
+    public String name;
+    public String kingdom;
+    public String phylum;
+    public String subPhylum;
+    public String classOfHuman;
+    public String order;
+    public String family;
+    public String genus;
+    public String species;
+
+
+    public Hierarchy(String name, String kingdom, String phylum, String subPhylum, String classOfHuman, 
+            String order, String family, String genus, String species) {                                               //Argument or Parameterized Constructor
+        this.name = name;
+        this.kingdom = kingdom;
+        this.phylum = phylum;
+        this.subPhylum = subPhylum;
+        this.classOfHuman = classOfHuman;
+        this.order = order;
+        this.family = family;
+        this.genus = genus;
+        this.species = species;
+    }
+   
+        public void printDetails(){
+        System.out.println("Taxonomical Hierarchy of " + name + " is given below: ");
+        System.out.println("Kingdom: " + kingdom);
+        System.out.println("Phylum: " + phylum);
+        System.out.println("Sub-Phylum: " + subPhylum);
+        System.out.println("Class: " + classOfHuman);
+        System.out.println("Order: " + order);
+        System.out.println("Family: " + family);
+        System.out.println("Genus: " + genus);
+        System.out.println("Species: " + species);
+   }
+}
+
+    public static void main(String[] args) {
+     
+        Hierarchy hierarchy = new Hierarchy();
+        
+        hierarchy.name = "Human";
+        hierarchy.kingdom = "Animalia";
+        hierarchy.phylum = "Chordata";
+        hierarchy.subPhylum = "Vertebrata";
+        hierarchy.classOfHuman = "Mammalia";
+        hierarchy.order = "Primate";
+        hierarchy.family = "Hominidae";
+        hierarchy.genus = "Homo";
+        hierarchy.species = "Homo Sapiens";
+
+        
+        hierarchy.printDetails();
+ 
+    }
