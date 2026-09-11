@@ -1,0 +1,26 @@
+package ArrayPractise;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class ArrayPractise {
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter your desired number of rows: ");
+        int i = input.nextInt();
+        System.out.println("Enter your desired number of columns: ");
+        int j = input.nextInt();
+        
+        int[] numbers[] = new int[i][j];
+        
+        for(int x = 0; x < i; x++){
+            for(int y = 0; y < j; y++){
+                System.out.println("Enter your desired integer element");
+                numbers[x][y] = input.nextInt();
+            }
+        }
+        System.out.println(Arrays.deepToString(numbers));
+    
+    }
+}
